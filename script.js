@@ -6,7 +6,6 @@ let table = document.querySelector("table");
 let prices = document.querySelectorAll(".price");
 
 const getSum = () => {
-//Add your code here
 	let total = 0;
 	prices.forEach((el)=>{
 		total+=Number(el.innerText);
@@ -15,6 +14,7 @@ const getSum = () => {
   let td = document.createElement("td");
   td.innerText = total;
   td.className = "price";
+  td.id = "ans";
   tr.append(td);
   table.append(tr);
 };

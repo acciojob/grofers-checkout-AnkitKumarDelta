@@ -11,11 +11,14 @@ const getSum = () => {
 		total+=Number(el.innerText);
 	});
   let tr = document.createElement("tr");
-  let td = document.createElement("td");
-  td.innerText = total;
-  td.className = "price";
-  td.id = "ans";
-  tr.append(td);
+  let td1 = document.createElement("td");
+  let td2 = document.createElement("td");
+	td1.innerText = 'Total Price';
+	td1.className = 'item';
+  td2.innerText = total;
+  td2.className = "price";
+  // td.id = "ans";
+  tr.append(td1,td2);
   table.append(tr);
 };
 
